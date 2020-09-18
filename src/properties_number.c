@@ -28,9 +28,8 @@ int armstrong(int number)
        flag=1;
    }
    else
-   {
        flag=0;
-   }
+   
     return flag;
 }
 int even_odd(int number)
