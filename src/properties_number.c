@@ -20,7 +20,7 @@ int armstrong(int number)
    while (number != 0)
    {
       reminder = number % 10;
-      sum = sum + (reminder*reminder*reminder);
+      sum = sum + pow(reminder,3);
       number = number / 10;
    }
    if(sum==copy_number)
