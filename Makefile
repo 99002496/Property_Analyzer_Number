@@ -1,7 +1,7 @@
-# Name of the project
+
 PROJECT_NAME = properties_number_analyzer
 
-# Output directory
+
 BUILD = build
 
 # All source code files
