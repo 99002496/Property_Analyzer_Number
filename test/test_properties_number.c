@@ -2,14 +2,22 @@
 #include <CUnit/CUnit.h>
 
 /* Modify these two lines according to the project */
-#include <calculator_operations.h>
-#define PROJECT_NAME    "Calculator"
+#include <properties_number.h>
+#define PROJECT_NAME    "Property_Analyzer"
 
 /* Prototypes for all the test functions */
-void test_add(void);
-void test_subtract(void);
-void test_multiply(void);
-void test_divide(void);
+void test_prime(void);
+void test_armstrong(void);
+void test_even_odd(void);
+void test_palindrome(void);
+void test_power(void);
+void test_harshad(void);
+void test_perfect_square(void);
+void test_perfect_cube(void);
+void test_automorphic_number(void);
+void test_divisibility_3(void);
+void test_divisibility_5(void);
+void test_divisibility_7(void);
 
 /* Start of the application test */
 int main() {
