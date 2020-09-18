@@ -191,4 +191,4 @@ int properties(int condition)
         break;
     }
     }
-
+}
