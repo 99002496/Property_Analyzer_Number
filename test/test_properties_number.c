@@ -30,11 +30,18 @@ int main() {
   
   
   /* Add your test functions in this format for testing*/
-  CU_add_test(suite, "add", test_add);
-  CU_add_test(suite, "subtract", test_subtract);
-  CU_add_test(suite, "multiply", test_multiply);
-  CU_add_test(suite, "divide", test_divide);
-
+  CU_add_test(suite, "prime", test_prime);
+  CU_add_test(suite, "armstrong", test_armstrong);
+  CU_add_test(suite, "even_odd", test_even_odd);
+  CU_add_test(suite, "palindrome", test_palindrome);
+  CU_add_test(suite, "power", test_power);
+  CU_add_test(suite, "harshad", test_harshad);
+  CU_add_test(suite, "perfect_square", test_perfect_square);
+  CU_add_test(suite, "perfect_cube", test_perfect_cube);
+   CU_add_test(suite, "automorphic_number", test_automorphic_number;
+  CU_add_test(suite, "divisibility_3", test_divisibility_3);
+  CU_add_test(suite, "divisibility_5", test_divisibility_5);
+  CU_add_test(suite, "divisibility_7", test_divisibility_7);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
