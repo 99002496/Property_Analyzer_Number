@@ -7,17 +7,15 @@ int prime(int number)
     {
       if(number%iteration==0)
       {
-         printf("The number is not a prime number\n\n");
          flag=0;
          break;
       }
     }
-    if(flag==1)
-      printf("The number is a prime number\n\n");
+    return flag;
 }
 int armstrong(int number)
 {
-   int reminder, sum=0, copy_number;
+   int reminder, sum=0, copy_number,flag;
    copy_number = number;
    while (number != 0)
    {
@@ -27,23 +25,30 @@ int armstrong(int number)
    }
    if(sum==copy_number)
    {
-       printf("The number is an Armstrong number\n\n");
+       flag=1;
    }
    else
-    printf("The number is not an Armstrong Number\n\n");
+   {
+       flag=0;
+   }
+    return flag;
 }
 int even_odd(int number)
 {
+    int flag;
     if(number%2 == 0)
     {
-        printf("The number is even\n\n");
+        flag=1;
     }
     else
-        printf("The number is odd\n\n");
+    {
+        flag=0;
+    }
+        return flag;
 }
 int palindrome(int number)
 {
-    int remainder, reversed_number=0, copy_number;
+    int remainder, reversed_number=0, copy_number,flag;
      copy_number=number;
      while (number != 0)
         {
@@ -53,10 +58,13 @@ int palindrome(int number)
        }
      if(reversed_number==copy_number)
      {
-         printf("The number is palindrome\n\n");
+         flag=1;
      }
      else
-        printf("The number is not palindrome\n\n");
+        {
+            flag=0;
+        }
+        return flag;
 }
 int power(int number)
 {
@@ -70,19 +78,12 @@ int power(int number)
         }
         copy_number=copy_number/2;
     }
-    if(flag==0)
-    {
-       printf("The number is not a power of 2\n\n");
-    }
-    else
-    {
-        printf("The number is power of 2\n\n");
-    }
+    return flag;
 }
 
 int harshad(int number)
 {
-    int reminder,sum=0,copy_number;
+    int reminder,sum=0,copy_number,flag;
     copy_number = number;
      while(number > 0)
         {
@@ -92,10 +93,13 @@ int harshad(int number)
         }
     if(copy_number%sum == 0)
     {
-        printf("The number is a Harshad number\n\n");
+        flag=1;
     }
     else
-        printf("The is not a Harshad number\n\n");
+    {
+        flag=0;
+    }
+    return flag;
 }
 
 int perfect_square(int number)
@@ -108,14 +112,7 @@ int perfect_square(int number)
             flag=1;
         }
     }
-    if(flag==1)
-    {
-        printf("The number is a perfect square\n\n");
-    }
-    else
-    {
-        printf("The number is not a perfect square\n\n");
-    }
+    return flag;
 }
 
 int perfect_cube(int number)
@@ -128,14 +125,7 @@ int perfect_cube(int number)
             flag=1;
         }
     }
-    if(flag==1)
-    {
-        printf("The number is a perfect cube\n\n");
-    }
-    else
-    {
-        printf("The number is not a perfect cube\n\n");
-    }
+    return flag;
 }
 int automorphic_number(int number)
 {
@@ -150,49 +140,48 @@ while (number > 0)
         number = number / 10;
         square = square / 10;
     }
-    if(flag==1)
-    {
-        printf("The number is an Automorphic number\n\n");
-    }
-    else
-    {
-        printf("The number is not an Automorphic number\n\n");
-    }
+    return flag;
 }
 
 int divisibility_3(int number)
 {
+    int flag;
     if(number%3==0)
     {
-        printf("The number is divisible by 3\n\n");
+       flag=1;
     }
     else
     {
-        printf("The number is not divisible by 3\n\n");
+        flag=0;
     }
+    return flag;
 }
 
 int divisibility_5(int number)
 {
+    int flag;
     if(number%5==0)
     {
-        printf("The number is divisible by 5\n\n");
+        flag=1;
     }
     else
     {
-        printf("The number is not divisible by 5\n\n");
+        flag=0;
     }
+    return flag;
 }
 
 int divisibility_7(int number)
 {
+    int flag;
     if(number%7==0)
     {
-        printf("The number is divisible by 7\n\n");
+        flag=1;
     }
     else
     {
-        printf("The number is not divisible by 7\n\n");
+        flag=0;
     }
+    return flag;
 }
 
