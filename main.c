@@ -5,7 +5,7 @@ int properties(int);
 int main()
 {
    int result;
-   printf("------Discover the amazing properties of your number------\n\n");
+   printf("---------Discover the amazing properties of your number---------\n\n");
    while(1)
    {
        result=properties_available();
