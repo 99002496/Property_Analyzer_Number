@@ -1,17 +1,29 @@
 # Property Analyzer of a given number
 
 This is an application which checks for various properties of a number. When a number is given, the application checks whether the number is:
+
 1)Prime
+
 2)Armstrong
+
 3)Odd/Even
+
 4)Palindrome
+
 5)Power
+
 6)Harshad
+
 7)Perfect_square
+
 8)Perfect_cube
+
 9)Automorphic
+
 10)Divisible by 3
+
 11)Divisible by 5
+
 12)Divisible by 7
 
 
