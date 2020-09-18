@@ -37,7 +37,7 @@ int main() {
   CU_add_test(suite, "harshad", test_harshad);
   CU_add_test(suite, "perfect_square", test_perfect_square);
   CU_add_test(suite, "perfect_cube", test_perfect_cube);
-   CU_add_test(suite, "automorphic_number", test_automorphic_number;
+   CU_add_test(suite, "automorphic_number", test_automorphic_number);
   CU_add_test(suite, "divisibility_3", test_divisibility_3);
   CU_add_test(suite, "divisibility_5", test_divisibility_5);
   CU_add_test(suite, "divisibility_7", test_divisibility_7);
