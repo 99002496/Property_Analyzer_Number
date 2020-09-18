@@ -38,7 +38,7 @@ int properties_available(void)
 }
 int properties(int condition)
 {
-    int number;
+    int number,flag;
     printf("Enter your number to be checked\n");
     scanf("%d", &number);
     if(number>0)
@@ -46,51 +46,148 @@ int properties(int condition)
     switch(condition)
     {
     case 1:
-        prime(number);
+        flag=prime(number);
+        if(flag==1)
+        {
+            printf("The number is a prime number\n\n");
+        }
+        else
+        {
+            printf("The number is not a prime number\n\n");
+        }
         break;
 
     case 2:
-        armstrong(number);
+
+        flag=armstrong(number);
+        if(flag==1)
+        {
+            printf("The number is an armstrong number\n\n");
+        }
+        else
+        {
+            printf("The number is not an armstrong number\n\n");
+        }
         break;
 
     case 3:
-        even_odd(number);
+        flag=even_odd(number);
+        if(flag==1)
+        {
+            printf("The number is an even number\n\n");
+        }
+        else
+        {
+            printf("The number is an odd number\n\n");
+        }
         break;
 
     case 4:
-        palindrome(number);
+        flag=palindrome(number);
+        if(flag==1)
+        {
+            printf("The number is Palindrome\n\n");
+        }
+        else
+        {
+            printf("The number is Not Palindrome\n\n");
+        }
         break;
 
     case 5:
-        power(number);
+        flag=power(number);
+        if(flag==1)
+        {
+            printf("The number is Power of 2\n\n");
+        }
+        else
+        {
+            printf("The number is Not Power of 2\n\n");
+        }
         break;
 
     case 6:
-        harshad(number);
+        flag=harshad(number);
+        if(flag==1)
+        {
+            printf("The number is a Harshad number\n\n");
+        }
+        else
+        {
+            printf("The number is Not a Harshad number\n\n");
+        }
         break;
 
     case 7:
-        perfect_square(number);
+        flag=perfect_square(number);
+        if(flag==1)
+        {
+            printf("The number is a perfect square\n\n");
+        }
+        else
+        {
+            printf("The number is Not a perfect square\n\n");
+        }
         break;
 
     case 8:
-        perfect_cube(number);
+        flag=perfect_cube(number);
+        if(flag==1)
+        {
+            printf("The number is a perfect cube\n\n");
+        }
+        else
+        {
+            printf("The number is Not a perfect cube\n\n");
+        }
         break;
 
     case 9:
-        automorphic_number(number);
+        flag=automorphic_number(number);
+        if(flag==1)
+        {
+            printf("The number is an Automorphic number\n\n");
+        }
+        else
+        {
+            printf("The number is Not an Automorphic number\n\n");
+        }
         break;
 
      case 10:
-        divisibility_3(number);
+        flag=divisibility_3(number);
+        if(flag==1)
+        {
+            printf("The number is divisible by 3\n\n");
+        }
+        else
+        {
+            printf("The number is Not divisible by 3\n\n");
+        }
         break;
 
      case 11:
-        divisibility_5(number);
+        flag=divisibility_5(number);
+        if(flag==1)
+        {
+            printf("The number is divisible by 5\n\n");
+        }
+        else
+        {
+            printf("The number is Not divisible by 5\n\n");
+        }
         break;
 
     case 12:
-        divisibility_7(number);
+        flag=divisibility_7(number);
+        if(flag==1)
+        {
+            printf("The number is divisible by 7\n\n");
+        }
+        else
+        {
+            printf("The number is Not divisible by 7\n\n");
+        }
         break;
     }
     }
