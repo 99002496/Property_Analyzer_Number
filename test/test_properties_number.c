@@ -57,30 +57,86 @@ int main() {
 }
 
 /* Write all the test functions */ 
-void test_add(void) {
-  CU_ASSERT(30 == add(10, 20));
+void test_prime(void) {
+  CU_ASSERT(1 == prime(1));
   
   /* Dummy fail*/
-  CU_ASSERT(1500 == add(750, 7500));
+  CU_ASSERT(1 == prime(15));
 }
 
-void test_subtract(void) {
-  CU_ASSERT(-3 == subtract(0, 3));
+void test_armstrong(void) {
+  CU_ASSERT(1 == armstrong(153));
   
   /* Dummy fail*/
-  CU_ASSERT(1 == subtract(1000, 900));
+  CU_ASSERT(1 == armstrong(15));
 }
 
-void test_multiply(void) {
-  CU_ASSERT(0 == multiply(1, 0));
+void test_even_odd(void) {
+  CU_ASSERT(1 == even_odd(8));
   
   /* Dummy fail*/
-  CU_ASSERT(2 == multiply(2, 5));
+  CU_ASSERT(1 == even_odd(5));
 }
 
-void test_divide(void) {
-  CU_ASSERT(0 == divide(1, 0));
+void test_palindrome(void) {
+  CU_ASSERT(1 == palindrome(1551));
   
   /* Dummy fail*/
-  CU_ASSERT(3 == divide(2, 2));
+  CU_ASSERT(1 == palindrome(20));
+}
+
+void test_power(void) {
+  CU_ASSERT(1 == power(8));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == power(10));
+}
+
+void test_harshad(void) {
+  CU_ASSERT(1 == harshad(156));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == harshad(65));
+}
+
+void test_perfect_square(void) {
+  CU_ASSERT(1 == perfect_square(4));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == perfect_square(5));
+}
+
+void test_perfect_cube(void) {
+  CU_ASSERT(1 == perfect_cube(8));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == perfect_cube(7));
+}
+
+void test_automorphic_number(void) {
+  CU_ASSERT(1 == automorphic_number(5));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == automorphic_number(75));
+}
+
+void test_divisibility_3(void) {
+  CU_ASSERT(1 == divisibility_3(6));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == divisibility_3(2));
+}
+
+void test_divisibility_5(void) {
+  CU_ASSERT(1 ==divisibility_5(25));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == divisibility_5(7));
+}
+
+void test_divisibility_7(void) {
+  CU_ASSERT(1 == divisibility_7(49));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == divisibility_7(11));
 }
