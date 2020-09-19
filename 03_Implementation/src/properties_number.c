@@ -1,7 +1,11 @@
 #include "properties_number.h"
-int prime(int number)
+int prime()
 {
-    int flag=1, half, iteration ;
+    int flag=1, half, iteration,number ;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     half=number/2;
     for(iteration=2;iteration<=half;iteration++)
     {
@@ -13,9 +17,14 @@ int prime(int number)
     }
     return flag;
 }
-int armstrong(int number)
+}
+int armstrong()
 {
-   int reminder, sum=0, copy_number,flag;
+   int reminder, sum=0, copy_number,flag,number;
+   printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
    copy_number = number;
    while (number != 0)
    {
@@ -28,13 +37,20 @@ int armstrong(int number)
        flag=1;
    }
    else
+   {
        flag=0;
-   
+   }
     return flag;
 }
-int even_odd(int number)
+}
+int even_odd()
 {
     int flag;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     if(number%2 == 0)
     {
         flag=1;
@@ -45,9 +61,15 @@ int even_odd(int number)
     }
         return flag;
 }
-int palindrome(int number)
+}
+int palindrome()
 {
     int remainder, reversed_number=0, copy_number,flag;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
      copy_number=number;
      while (number != 0)
         {
@@ -65,9 +87,15 @@ int palindrome(int number)
         }
         return flag;
 }
-int power(int number)
+}
+int power()
 {
     int flag=1, copy_number;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     copy_number = number;
      while(copy_number!=1)
     {
@@ -79,10 +107,16 @@ int power(int number)
     }
     return flag;
 }
+}
 
-int harshad(int number)
+int harshad()
 {
     int reminder,sum=0,copy_number,flag;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     copy_number = number;
      while(number > 0)
         {
@@ -100,10 +134,16 @@ int harshad(int number)
     }
     return flag;
 }
+}
 
-int perfect_square(int number)
+int perfect_square()
 {
     int iteration,flag=0;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     for(iteration=0;iteration<=number;iteration++)
     {
         if(number==iteration*iteration)
@@ -113,10 +153,16 @@ int perfect_square(int number)
     }
     return flag;
 }
+}
 
-int perfect_cube(int number)
+int perfect_cube()
 {
     int iteration,flag=0;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     for(iteration=0;iteration<=number;iteration++)
     {
         if(number==iteration*iteration*iteration)
@@ -126,9 +172,15 @@ int perfect_cube(int number)
     }
     return flag;
 }
-int automorphic_number(int number)
+}
+int automorphic_number()
 {
     int square, flag=1;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     square=number*number;
 while (number > 0)
     {
@@ -141,10 +193,15 @@ while (number > 0)
     }
     return flag;
 }
-
-int divisibility_3(int number)
+}
+int divisibility_3()
 {
     int flag;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+     if(number>0)
+    {
     if(number%3==0)
     {
        flag=1;
@@ -155,10 +212,16 @@ int divisibility_3(int number)
     }
     return flag;
 }
+}
 
-int divisibility_5(int number)
+int divisibility_5()
 {
     int flag;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+    if(number>0)
+    {
     if(number%5==0)
     {
         flag=1;
@@ -169,10 +232,16 @@ int divisibility_5(int number)
     }
     return flag;
 }
+}
 
-int divisibility_7(int number)
+int divisibility_7()
 {
     int flag;
+    int number;
+    printf("Enter your number to be checked\n");
+    scanf("%d", &number);
+    if(number>0)
+    {
     if(number%7==0)
     {
         flag=1;
@@ -182,5 +251,51 @@ int divisibility_7(int number)
         flag=0;
     }
     return flag;
+    }
 }
 
+int operations()
+{
+    int calculator_operand1 = 0;
+    int calculator_operand2 = 0;
+    int addition, subtraction, multiplication, division, calculator_operation;
+    printf("\nAvailable Operations\n");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
+    printf("Enter the associated number to perform operation\n");
+    scanf("%d", &calculator_operation);
+
+    switch(calculator_operation)
+    {
+        case 1:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d + %d = ", calculator_operand1, calculator_operand2);
+            addition=calculator_operand1+calculator_operand2;
+            return addition;
+            break;
+        case 2:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d + %d = ", calculator_operand1, calculator_operand2);
+            subtraction=calculator_operand1-calculator_operand2;
+            return subtraction;
+            break;
+        case 3:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d + %d = ", calculator_operand1, calculator_operand2);
+            multiplication=calculator_operand1 * calculator_operand2;
+            return multiplication;
+            break;
+        case 4:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d + %d = ", calculator_operand1, calculator_operand2);
+            division=calculator_operand1 / calculator_operand2;
+            return division;
+            break;
+        default:
+            printf("Exiting\n\n");
+            return NULL;
+}
+}
