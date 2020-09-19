@@ -20,15 +20,15 @@ int properties_available(void)
     int index;
     printf("Check whether your number is \n 1)Prime \n 2)Armstrong \n 3)Even/Odd \n 4)Palindrome\n ");
     printf("5)Power of 2 \n 6)Harshad number\n 7)Perfect square \n 8)Perfect cube \n 9)Automorphic Number \n ");
-    printf("10)Divisibility by 3 \n 11)Divisibility by 5 \n 12)Divisibility by 7 \n 13)Exit\n \n");
+    printf("10)Divisibility by 3 \n 11)Divisibility by 5 \n 12)Divisibility by 7 \n 13)Operations\n 14)Exit\n \n");
     printf("Enter the number associated with the property you want to check\n");
     scanf("%d", &index);
-    if(index==13)
+    if(index==14)
     {
         printf("Exiting\n");
         return 0;
     }
-    if(index>12 || index<1)
+    if(index>13 || index<1)
     {
        printf("Invalid index");
        return 0;
@@ -39,6 +39,8 @@ int properties_available(void)
 int properties(int condition)
 {
     int number,flag;
+    if(condition!=13)
+    {
     printf("Enter your number to be checked\n");
     scanf("%d", &number);
     if(number>0)
@@ -189,6 +191,18 @@ int properties(int condition)
             printf("The number is Not divisible by 7\n\n");
         }
         break;
+
     }
     }
+    }
+else
+{
+        flag=operations();
+        if(flag!= NULL)
+          {
+            printf(" %d\n\n",flag);
+
+          }
+
+}
 }
