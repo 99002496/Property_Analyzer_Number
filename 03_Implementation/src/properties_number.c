@@ -24,11 +24,12 @@ int armstrong(int number)
       number = number / 10;
    }
    if(sum==copy_number)
+   {
        flag=1;
-   
+   }
    else
        flag=0;
-   
+
     return flag;
 }
 int even_odd(int number)
@@ -181,4 +182,50 @@ int divisibility_7(int number)
         flag=0;
     }
     return flag;
+}
+
+int operations()
+{
+    int calculator_operand1 = 0;
+    int calculator_operand2 = 0;
+    int addition, subtraction, multiplication, division, calculator_operation;
+    printf("\nAvailable Operations\n");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
+    printf("Enter the associated number to perform operation\n");
+    scanf("%d", &calculator_operation);
+
+    switch(calculator_operation)
+    {
+        case 1:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d + %d = ", calculator_operand1, calculator_operand2);
+            addition=calculator_operand1+calculator_operand2;
+            return addition;
+            break;
+        case 2:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d - %d = ", calculator_operand1, calculator_operand2);
+            subtraction=calculator_operand1-calculator_operand2;
+            return subtraction;
+            break;
+        case 3:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d * %d = ", calculator_operand1, calculator_operand2);
+            multiplication=calculator_operand1 * calculator_operand2;
+            return multiplication;
+            break;
+        case 4:
+            printf("Enter two number\n");
+            scanf("%d %d", &calculator_operand1, &calculator_operand2);
+            printf("\n\t%d / %d = ", calculator_operand1, calculator_operand2);
+            division=calculator_operand1 / calculator_operand2;
+            return division;
+            break;
+        default:
+            printf("Exiting\n\n");
+            return NULL;
+}
 }
