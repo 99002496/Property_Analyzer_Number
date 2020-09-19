@@ -24,9 +24,8 @@ int armstrong(int number)
       number = number / 10;
    }
    if(sum==copy_number)
-   {
        flag=1;
-   }
+   
    else
        flag=0;
    
