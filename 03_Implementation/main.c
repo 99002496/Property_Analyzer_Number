@@ -5,7 +5,7 @@ int properties(int);
 int main()
 {
    int result;
-   printf("---------Discover the amazing properties of your number---------\n\n");
+   printf("------Discover the amazing properties of your number------\n\n");
    while(1)
    {
        result=properties_available();
@@ -20,15 +20,15 @@ int properties_available(void)
     int index;
     printf("Check whether your number is \n 1)Prime \n 2)Armstrong \n 3)Even/Odd \n 4)Palindrome\n ");
     printf("5)Power of 2 \n 6)Harshad number\n 7)Perfect square \n 8)Perfect cube \n 9)Automorphic Number \n ");
-    printf("10)Divisibility by 3 \n 11)Divisibility by 5 \n 12)Divisibility by 7 \n 13)Exit\n \n");
+    printf("10)Divisibility by 3 \n 11)Divisibility by 5 \n 12)Divisibility by 7 \n 13)Operations \n 14)Exit\n \n");
     printf("Enter the number associated with the property you want to check\n");
     scanf("%d", &index);
-    if(index==13)
+    if(index==14)
     {
         printf("Exiting\n");
         return 0;
     }
-    if(index>12 || index<1)
+    if(index>13 || index<1)
     {
        printf("Invalid index");
        return 0;
@@ -38,15 +38,11 @@ int properties_available(void)
 }
 int properties(int condition)
 {
-    int number,flag;
-    printf("Enter your number to be checked\n");
-    scanf("%d", &number);
-    if(number>0)
-    {
+    int flag;
     switch(condition)
     {
     case 1:
-        flag=prime(number);
+        flag=prime();
         if(flag==1)
         {
             printf("The number is a prime number\n\n");
@@ -59,7 +55,7 @@ int properties(int condition)
 
     case 2:
 
-        flag=armstrong(number);
+        flag=armstrong();
         if(flag==1)
         {
             printf("The number is an armstrong number\n\n");
@@ -71,7 +67,7 @@ int properties(int condition)
         break;
 
     case 3:
-        flag=even_odd(number);
+        flag=even_odd();
         if(flag==1)
         {
             printf("The number is an even number\n\n");
@@ -83,7 +79,7 @@ int properties(int condition)
         break;
 
     case 4:
-        flag=palindrome(number);
+        flag=palindrome();
         if(flag==1)
         {
             printf("The number is Palindrome\n\n");
@@ -95,7 +91,7 @@ int properties(int condition)
         break;
 
     case 5:
-        flag=power(number);
+        flag=power();
         if(flag==1)
         {
             printf("The number is Power of 2\n\n");
@@ -107,7 +103,7 @@ int properties(int condition)
         break;
 
     case 6:
-        flag=harshad(number);
+        flag=harshad();
         if(flag==1)
         {
             printf("The number is a Harshad number\n\n");
@@ -119,7 +115,7 @@ int properties(int condition)
         break;
 
     case 7:
-        flag=perfect_square(number);
+        flag=perfect_square();
         if(flag==1)
         {
             printf("The number is a perfect square\n\n");
@@ -131,7 +127,7 @@ int properties(int condition)
         break;
 
     case 8:
-        flag=perfect_cube(number);
+        flag=perfect_cube();
         if(flag==1)
         {
             printf("The number is a perfect cube\n\n");
@@ -143,7 +139,7 @@ int properties(int condition)
         break;
 
     case 9:
-        flag=automorphic_number(number);
+        flag=automorphic_number();
         if(flag==1)
         {
             printf("The number is an Automorphic number\n\n");
@@ -155,7 +151,7 @@ int properties(int condition)
         break;
 
      case 10:
-        flag=divisibility_3(number);
+        flag=divisibility_3();
         if(flag==1)
         {
             printf("The number is divisible by 3\n\n");
@@ -167,7 +163,7 @@ int properties(int condition)
         break;
 
      case 11:
-        flag=divisibility_5(number);
+        flag=divisibility_5();
         if(flag==1)
         {
             printf("The number is divisible by 5\n\n");
@@ -179,7 +175,7 @@ int properties(int condition)
         break;
 
     case 12:
-        flag=divisibility_7(number);
+        flag=divisibility_7();
         if(flag==1)
         {
             printf("The number is divisible by 7\n\n");
@@ -189,6 +185,14 @@ int properties(int condition)
             printf("The number is Not divisible by 7\n\n");
         }
         break;
-    }
+
+    case 13:
+        flag=operations();
+        if(flag== NULL)
+          break;
+        else
+          printf(" %d\n\n",flag);
+          break;
+
     }
 }
