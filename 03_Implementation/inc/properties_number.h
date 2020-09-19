@@ -1,4 +1,3 @@
-
 #ifndef __CALCULATOR_OPERATIONS_H__
 #define __CALCULATOR_OPERATIONS_H__
 #include <stdio.h>
@@ -16,4 +15,6 @@ int automorphic_number(int number);
 int divisibility_3(int number);
 int divisibility_5(int number);
 int divisibility_7(int number);
+int operations(void);
 #endif
+
