@@ -198,11 +198,10 @@ int properties(int condition)
 else
 {
         flag=operations();
-        if(flag!= NULL)
-          {
+       
             printf(" %d\n\n",flag);
 
-          }
+          
 
 }
 }
